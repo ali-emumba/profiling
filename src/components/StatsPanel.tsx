@@ -1,16 +1,16 @@
 import React from "react";
 
 function StatsPanel() {
-  // Simulate expensive computation
   let total = 0;
-  for (let i = 0; i < 5_000_000; i++) {
+
+  for (let i = 0; i < 6_000_000; i++) {
     total += i;
   }
 
   return (
     <div style={{ marginTop: 20 }}>
       <h4>Stats Panel</h4>
-      <p>Computed Value: {total}</p>
+      <p>Total: {total}</p>
     </div>
   );
 }
